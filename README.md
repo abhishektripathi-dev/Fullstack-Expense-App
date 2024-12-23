@@ -1,107 +1,132 @@
-# Simple Expense Tracker
+# Expense Tracker
 
-This project is a simple, yet effective, **Expense Tracker** to help you manage your finances. If you've ever wondered where your money goes or how you manage to spend so much, this tool is for you! This tutorial will guide you through building your own expense tracker using **HTML**, **CSS**, and **JavaScript**.
+## Overview
+The Expense Tracker is a web-based application designed to manage and track your income and expenses. It allows users to add income and expense entries, categorize expenses, view transaction history, and calculate total income, expenses, and balance. The app is fully responsive and supports CRUD operations using a backend API.
 
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Features](#features)
-- [Project Demo](#project-demo)
-- [Technologies Used](#technologies-used)
-- [Getting Started](#getting-started)
-- [Project Structure](#project-structure)
-- [Tutorial Outline](#tutorial-outline)
-  - [1. Setting Up the HTML Structure](#1-setting-up-the-html-structure)
-  - [2. Styling the Expense Tracker with CSS](#2-styling-the-expense-tracker-with-css)
-  - [3. Implementing Functionality with JavaScript](#3-implementing-functionality-with-javascript)
-  - [4. Enhancing the User Experience](#4-enhancing-the-user-experience)
-  - [5. Testing and Debugging](#5-testing-and-debugging)
-- [Prerequisites](#prerequisites)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Introduction
-
-The **Expense Tracker** is designed to help users monitor their income and expenses in a simple, intuitive way. By the end of this project, you will have a fully functional tool to track your financial activities with a sleek and user-friendly interface.
+---
 
 ## Features
+- Add income with descriptions and amounts.
+- Add expenses with descriptions, categories, and amounts.
+- View transaction history with descriptions, amounts, and types (Income/Expense).
+- Calculate and display total income, expenses, and balance.
+- Clear all transactions at once.
+- Fully responsive UI for all device sizes.
+- CRUD operations powered by Axios and a backend API.
 
-- Track income and expenses.
-- Visualize financial data in a simple and clean interface.
-- Clear all transactions with a reset button.
-- View the total balance, income, and expenses at a glance.
+---
 
-## Project Demo
+## Tech Stack
 
-You can view a demo of the project [here](#). (Add your demo link)
+### Frontend
+- **HTML5**: Structure of the application.
+- **CSS3**: Styling and responsive design.
+- **JavaScript**: Frontend logic and integration with the backend using Axios.
 
-## Technologies Used
+### Backend
+- **Express.js**: Backend framework for handling API routes.
+- **Sequelize**: ORM for managing MySQL database.
+- **MySQL**: Database for storing transaction records.
 
-- **HTML5** for structuring the web page.
-- **CSS3** for styling the tracker.
-- **JavaScript** for handling dynamic functionality (such as adding, deleting, and managing transactions).
+---
 
-## Getting Started
+## Installation
 
-To run this project locally:
+### Prerequisites
+- Node.js and npm installed.
+- MySQL database setup.
 
-1. **Clone the repository**:
+### Steps
+1. Clone the repository:
    ```bash
-   git clone https://github.com/abhishek8182/expenseTracker.git
+   git clone https://github.com/your-repo/expense-tracker.git
    cd expense-tracker
+   ```
 
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-2. **Open `index.html` in your browser** to run the application.
+3. Set up the database:
+   - Create a MySQL database.
+   - Update the `config/database.js` file with your database credentials.
 
-No additional setup is required.
+4. Run the application:
+   ```bash
+   npm start
+   ```
 
-## Project Structure
+5. Open the application in your browser:
+   ```
+   http://localhost:5000
+   ```
 
+---
+
+## API Endpoints
+
+### Base URL
+```
+http://localhost:5000/api/transactions
+```
+
+### Endpoints
+- **GET** `/`: Fetch all transactions.
+- **POST** `/`: Add a new transaction.
+- **DELETE** `/:id`: Delete a specific transaction by ID.
+- **DELETE** `/`: Clear all transactions.
+
+---
+
+## Folder Structure
 ```
 expense-tracker/
-│
-├── index.html
-├── style.css
-└── script.js
+├── public/
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
+├── models/
+│   └── Transaction.js
+├── routes/
+│   └── transactionRoutes.js
+├── controllers/
+│   └── transactionController.js
+├── config/
+│   └── database.js
+├── app.js
+├── package.json
+└── README.md
 ```
 
-## Tutorial Outline
-
-### 1. Setting Up the HTML Structure
-
-We'll begin by creating the basic structure of the expense tracker using HTML. This includes the layout for displaying the balance, income, expenses, and transaction history.
-
-### 2. Styling the Expense Tracker with CSS
-
-Next, we’ll apply styles to make the tracker visually appealing. We'll use CSS to ensure the layout is clean and responsive.
-
-### 3. Implementing Functionality with JavaScript
-
-The core functionality of the tracker is implemented in JavaScript. This includes adding transactions, calculating totals, and updating the DOM dynamically to reflect changes.
-
-### 4. Enhancing the User Experience
-
-We’ll add some enhancements, such as form validation, error handling, and a user-friendly interface.
-
-### 5. Testing and Debugging
-
-Finally, we’ll go over how to test your tracker to make sure everything works as expected and debug common issues.
-
-## Prerequisites
-
-To follow along with this tutorial, it will be helpful to have:
-
-- Basic knowledge of **HTML**, **CSS**, and **JavaScript**.
-- Familiarity with **DOM manipulation** in JavaScript.
+---
 
 ## Contributing
+1. Fork the repository.
+2. Create a new branch for your feature:
+   ```bash
+   git checkout -b feature-name
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Add your message here"
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature-name
+   ```
+5. Create a Pull Request.
 
-Contributions are welcome! Feel free to open an issue or submit a pull request.
+---
+
+## Contributors
+- **Abhishek Tripathi**
+  - [GitHub](https://github.com/your-github)
+  - [LinkedIn](https://linkedin.com/in/your-linkedin)
+  - [LeetCode](https://leetcode.com/your-leetcode)
+
+---
 
 ## License
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
-
-This `README.md` provides a clear and comprehensive overview of the project, including instructions, features, and a tutorial breakdown for users who want to build or contribute to the expense tracker.
-# Fullstack-Expense-App
