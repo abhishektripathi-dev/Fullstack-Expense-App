@@ -2,15 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Expense Tracker</title>
     <!-- link external css -->
-    <link rel="stylesheet" href="../public/style.css">
+    <link rel="stylesheet" href="../public/style.css" />
 </head>
 
 <body>
-
     <div class="container">
         <h1>Expense Tracker</h1>
 
@@ -19,11 +18,11 @@
 
             <div class="input-group">
                 <label for="income-description">Description</label>
-                <input type="text" name="" id="income-description" placeholder="e.g. Salary">
+                <input type="text" name="" id="income-description" placeholder="e.g. Salary" />
             </div>
             <div class="input-group">
                 <label for="income-amount">Amount (₹)</label>
-                <input type="number" name="" id="income-amount" placeholder="e.g. 100000">
+                <input type="number" name="" id="income-amount" placeholder="e.g. 100000" />
             </div>
 
             <div class="button-group">
@@ -36,7 +35,7 @@
 
             <div class="input-group">
                 <label for="expense-description">Description</label>
-                <input type="text" name="" id="expense-description" placeholder="e.g. Rent">
+                <input type="text" name="" id="expense-description" placeholder="e.g. Rent" />
             </div>
             <div class="input-group">
                 <label for="expense-category">Category</label>
@@ -50,7 +49,7 @@
             </div>
             <div class="input-group">
                 <label for="expense-amount">Amount (₹)</label>
-                <input type="number" name="" id="expense-amount" placeholder="e.g. 50000">
+                <input type="number" name="" id="expense-amount" placeholder="e.g. 50000" />
             </div>
 
             <div class="button-group">
@@ -68,12 +67,11 @@
                         <th>Category</th>
                         <th>Amount (₹)</th>
                         <th>Type</th>
-                        <th>Action</th> <!--Column for delete button-->
+                        <th>Action</th>
+                        <!--Column for delete button-->
                     </tr>
                 </thead>
-                <tbody id="transaction-history">
-
-                </tbody>
+                <tbody id="transaction-history"></tbody>
             </table>
 
             <!-- Summary Section -->
@@ -89,9 +87,8 @@
         <div class="clear-button-group">
             <button onclick="clearAll()">Clear All</button>
         </div>
-
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="../public/script.js"></script>
 </body>
 
