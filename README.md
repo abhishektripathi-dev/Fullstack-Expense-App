@@ -39,7 +39,7 @@ The Expense Tracker is a web-based application designed to manage and track your
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/expense-tracker.git
+   git clone https://github.com/abhishektripathi-dev/Fullstack-Expense-App.git
    cd expense-tracker
    ```
 
@@ -118,15 +118,24 @@ expense-tracker/
 5. Create a Pull Request.
 
 ---
+## Contributing
+Contributions are welcome! Feel free to submit a pull request or report issues.
 
 ## Contributors
-- **Abhishek Tripathi**
-  - [GitHub](https://github.com/your-github)
-  - [LinkedIn](https://linkedin.com/in/your-linkedin)
-  - [LeetCode](https://leetcode.com/your-leetcode)
 
----
+### Abhishek Tripathi
+- **GitHub:** [github.com/abhishektripathi-dev](https://github.com/abhishektripathi-dev)
+- **LinkedIn:** [linkedin.com/in/imabhishek-tripathi](https://www.linkedin.com/in/imabhishek-tripathi/)
+- **LeetCode:** [leetcode.com/abhishektripathi-dev](https://leetcode.com/abhishektripathi-dev)
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+This project is licensed under the MIT License. Created and maintained by Abhishek Tripathi. See the LICENSE file for more details.
+
+## Acknowledgments
+- [Node.js](https://nodejs.org/)
+- [Express.js](https://expressjs.com/)
+- [Sequelize](https://sequelize.org/)
+- [Axios](https://axios-http.com/)
+
+---
 
