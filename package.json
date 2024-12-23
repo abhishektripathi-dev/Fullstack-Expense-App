@@ -1,0 +1,19 @@
+{
+  "name": "full-stack-expense-app",
+  "version": "1.0.0",
+  "description": "This project is a simple, yet effective, **Expense Tracker** to help you manage your finances. If you've ever wondered where your money goes or how you manage to spend so much, this tool is for you! This tutorial will guide you through building your own expense tracker using **HTML**, **CSS**, and **JavaScript**.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "mysql2": "^3.11.5",
+    "sequelize": "^6.37.5"
+  }
+}
